@@ -1,0 +1,33 @@
+<ion-tabs>
+  <ion-tab tab="strategies">
+    <app-strategies></app-strategies>
+  </ion-tab>
+  <ion-tab tab="portfolio">
+    <app-portfolio></app-portfolio>
+  </ion-tab>
+  <ion-tab tab="manager">
+    <app-manager></app-manager>
+  </ion-tab>
+
+  <div class="sub-bar">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="strategies">
+        <ion-icon name="play-circle"></ion-icon>
+        Strategies
+      </ion-tab-button>
+      <ion-tab-button tab="portfolio">
+        <ion-icon name="radio"></ion-icon>
+        Portfolio
+      </ion-tab-button>
+      <ion-tab-button tab="manager">
+        <ion-icon name="library"></ion-icon>
+        Manager
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        Search
+      </ion-tab-button>
+      <div class="tab-bg"></div>
+    </ion-tab-bar>
+  </div>
+</ion-tabs>

@@ -1,0 +1,57 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+h1 {
+    padding-top: 40vh;
+    text-align: center;
+}
+
+:root {
+    --tab-width: 84px;
+}
+
+@media only screen and (min-width: 600px) {
+    ion-tab-button {
+        width: var(--tab-width);
+        display: block;
+        height: 75px;
+        --background: transparent;
+    }
+
+    ion-tab-bar {
+        display: contents;
+    }
+
+    ion-content {
+        height: 100vh;
+        --padding-start: calc(var(--tab-width) * 2)
+    }
+
+    .bar {
+        height: 100%;
+        margin-top: 57px; // Top padding for the tab bar
+        z-index: 1;
+        width: var(--tab-width);
+        background-color: #F6F6F6;
+    }
+
+    // ion-tab-button .sub-tabs {
+    //     width: var(--tab-width);
+    //     display: block;
+    //     height: 75px;
+    //     --background: transparent;
+    // }
+
+    // ion-tab-bar .sub-tabs {
+    //     display: contents;
+    // }
+
+    .sub-bar {
+        height: 100vh;
+        margin-left: var(--tab-width);
+        margin-top: 57px; // Top padding for the tab bar
+        z-index: 1;
+        width: var(--tab-width);
+        border-left: 1px solid #DDD;
+        background-color: #F6F6F6;
+    }
+}
